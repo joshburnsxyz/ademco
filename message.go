@@ -1,3 +1,5 @@
+package ademco
+
 import (
 	"strings"
 	"errors"
