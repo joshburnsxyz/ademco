@@ -12,6 +12,7 @@ type Message struct {
 	EventDescription string
 	PartitionCode    string
 	ZoneId           string
+	Raw              string
 }
 
 var (
@@ -46,17 +47,10 @@ func (m *Message) Marshal(str string) (*Message, error) {
 		EventDescription: GetMessageDescription(eventCode,qualiferEventType),
 		PartitionCode:    partitionCode,
 		ZoneId:           zoneId
+		Raw:              str
 	}
 	return &msg,nil
 }
-
-
-func (m *Message) Unmarshal(*str string) (&str, error) {
-	// TODO: Actual format template
-	str = fmt.Sprintf("%v")
-	return str
-}
-
 
 func NewMessage(str string) (*Message,error) {
 	msg := Message{}
