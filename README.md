@@ -31,3 +31,9 @@ func parseMsg(adm string) *ademco.Message {
   fmt.Printf("New message from %s: %v", msg.ClientCode, str) 
 }
 ```
+
+## Todo
+
+- [ ] More detailed examples
+- [ ] Documentation
+- [ ] Flesh out APIs
