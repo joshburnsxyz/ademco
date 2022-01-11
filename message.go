@@ -43,7 +43,7 @@ func (m *Message) Marshal(str string) (*Message, error) {
 		ClientCode:       clientCode,
 		IsRestore:        qualiferEventType,
 		EventCode:        eventCode,
-		EventDescription: "",
+		EventDescription: GetMessageDescription(eventCode,qualiferEventType),
 		PartitionCode:    partitionCode,
 		ZoneId:           zoneId
 	}
