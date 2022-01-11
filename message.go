@@ -60,6 +60,6 @@ func (m *Message) Unmarshal(*str string) (&str, error) {
 
 func NewMessage(str string) (*Message,error) {
 	msg := Message{}
-	msg = *msg.Marshal(&str)
-	return &msg,nil
+	msg,err = *msg.Marshal(&str)
+	return &msg,err
 }
