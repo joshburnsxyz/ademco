@@ -46,7 +46,7 @@ func (m *Message) Marshal(str string) (*Message, error) {
 		EventCode:        eventCode,
 		EventDescription: GetMessageDescription(eventCode,qualiferEventType),
 		PartitionCode:    partitionCode,
-		ZoneId:           zoneId
+		ZoneId:           zoneId,
 		Raw:              str
 	}
 	return &msg,nil
