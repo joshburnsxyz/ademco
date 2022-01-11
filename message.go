@@ -47,3 +47,10 @@ func (m *Message) Marshal(str string) (*Message, error) {
 	}
 	return &msg,nil
 }
+
+
+func (m *Message) Unmarshal(*str string) (&str, error) {
+	// TODO: Actual format template
+	str = fmt.Sprintf("%v")
+	return str
+}
