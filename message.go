@@ -8,7 +8,7 @@ import (
 type Message struct {
 	ClientCode       string
 	IsRestore        bool
-	EventCode        int
+	EventCode        string
 	EventDescription string
 	PartitionCode    string
 	ZoneId           string
