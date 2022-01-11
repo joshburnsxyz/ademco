@@ -56,3 +56,10 @@ func (m *Message) Unmarshal(*str string) (&str, error) {
 	str = fmt.Sprintf("%v")
 	return str
 }
+
+
+func NewMessage(str string) (*Message,error) {
+	msg := Message{}
+	msg = *msg.Marshal(&str)
+	return &msg,nil
+}
